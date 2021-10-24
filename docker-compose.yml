@@ -6,7 +6,7 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - $PWD/metrics:/etc/prometheus
+      - ./metrics:/etc/prometheus
 
   grafana:
     image: grafana/grafana
@@ -16,6 +16,6 @@ services:
   nginx:
     image: nginx
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     ports:
       - "80:80"
