@@ -3,3 +3,26 @@
   hosts: all
   roles:
     - geerlingguy.docker
+
+- name: "Install nginx"
+  become: yes
+  hosts: all
+  roles:
+    - geerlingguy.nginx
+
+- name: "Install nodejs"
+  become: yes
+  hosts: all
+  vars_files:
+    - vars/node.yml
+  roles:
+    - geerlingguy.nodejs
+
+- name: "Install golang"
+  become: yes
+  hosts: all
+  vars_files:
+    - vars/go.yml
+  roles:
+    - geerlingguy.go
+     

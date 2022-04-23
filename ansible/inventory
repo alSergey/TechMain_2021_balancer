@@ -1,7 +1,2 @@
 [web]
-35.228.238.213 seralekhin=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
-35.228.112.253 seralekhin=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
-34.88.155.225 seralekhin=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
-
-[balacer]
-34.88.148.83 seralekhin=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
+146.185.209.116 ansible_user=ubuntu ansible_ssh_private_key_file=/Users/s.alekhin/diplom/diplom-bmstu-oNGetmHI.pem

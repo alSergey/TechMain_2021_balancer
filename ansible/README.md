@@ -10,6 +10,9 @@ brew install ansible
 
 ```sh
 ansible-galaxy install geerlingguy.docker
+ansible-galaxy install geerlingguy.nginx
+ansible-galaxy install geerlingguy.nodejs
+ansible-galaxy install geerlingguy.go
 ```
 
 * В файле invenory меняем наши хосты
